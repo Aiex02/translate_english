@@ -17,13 +17,17 @@
                 <p>{{ frases[0].fraseEng }}</p>
             </div>
             <div class="form-floating">
-                <textarea class="form-control" rows="10" (input) = "atualizaResposta()"></textarea>
+                <textarea 
+                    class="form-control" 
+                    rows="10" 
+                    (input) = "atualizaResposta($event)">
+                </textarea>
             </div>
         </div>
         <div class="row">
             <div class="cow">
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary">Check</button>
+                    <button type="button" class="btn btn-primary" (click) = "verificarResposta()">Check</button>
                 </div>
             </div>
         </div>
